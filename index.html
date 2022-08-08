@@ -14,8 +14,8 @@
     <script>
         addEventListener('load', async () =>{
             let sw = await navigator.serviceWorker.register('./sw.js')
-            console.log(sw)
-        })
+            console.log(sw);
+        });
 
         async function subscribe() {
             let sw = await navigator.serviceWorker.ready;
@@ -24,7 +24,7 @@
                 applicationServerKey : 'BB7R8LGaIata-Q0wRexEy1bpSL8PjCgbvinTFQj_q6HVTbmxq-VWgQ8V_qeVUnioCMVcRf6-R9zWstSeyyRwVro'
             })
             console.log(JSON.stringify(push))
-        }
+        };
     </script>
 </body>
 </html>

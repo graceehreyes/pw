@@ -1,5 +1,7 @@
 self.addEventListener('push', () => {
-    self.ServiceWorkerRegistration.sendNotification('test message', {
-
+    const data = e.data.json();
+    self.registration.sendNotification(data.title,{
+        body: 'Notified by AWS!!',
+        icon: 'https://www.awsys-i.com/res/nav-icon-hover.png',
     });
 });
